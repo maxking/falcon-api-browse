@@ -20,3 +20,12 @@ class HTMLResponseMiddleware:
         accept_html = "text/html" in request.accept.split(",")
         if accept_html:
             html_response(request, response, resource, params)
+
+    async def process_response_async(self, request, response, resource, params):
+        """Similar to :py:method:`process_response` but for ASGI.
+
+        Since there isn't any expensive I/O in process_response, use the same
+        method for ASGI too. The only I/O happening is reading the template
+        from Disk to render the HTML.
+        """
+        return self.process_request(request, response, resource, params)
