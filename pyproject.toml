@@ -9,6 +9,7 @@ license = "Apache-2.0"
 python = ">=3.7"
 falcon = ">=2.0.0"
 Jinja2 = ">=2.0.0"
+importlib-resources = "^5.4.0"
 
 [tool.poetry.dev-dependencies]
 
