@@ -35,6 +35,11 @@ instance during Falcon App creation.
    app = App(middleware=HTMLResponseMiddleware())
 
 
+Examples
+--------
+
+There are some runnable examples in [examples/](examples/) directory.
+
 LICENSE
 -------
 
