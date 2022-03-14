@@ -5,11 +5,9 @@ Falcon API Browse
 This project provides a middleware for `Falcon Web Framework
 <https://falcon.readthedocs.io/en/stable/index.html>`_ that will render the
 response in an HTML form for documentation purpose. It uses the docstring from
-the Resource object as documentation and all the supported response types for
-simpler documentation.
+the Resource object and all the supported HTTP methods for the resource.
 
-
-This project is inspired by Django Rest Framework's `Browsable API
+It is inspired by Django Rest Framework's `Browsable API
 <https://www.django-rest-framework.org/topics/browsable-api/>`_ and is written
 using jinja2 templating language.
 
@@ -26,7 +24,7 @@ enough to be used by other projects, it will be provided via PyPI.
 Using
 -----
 
-Since this is a middleware for falcon, you can use it by passing an initialized
+Since this is a middleware for Falcon, you can use it by passing an initialized
 instance during Falcon App creation.
 
 ::
