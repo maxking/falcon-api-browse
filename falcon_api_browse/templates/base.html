@@ -32,6 +32,6 @@ Doc: {{ resource.__doc__ }}</pre>
     <h2>Response</h2>
     <pre>Status: {{ response.status }}</pre>
     <pre>Body:</pre>
-    <pre>{{ response.text|ppjson }}</pre>
+    <pre>{{ response.render_body()|ppjson }}</pre>
   </body>
 </html>

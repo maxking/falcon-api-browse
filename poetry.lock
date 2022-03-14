@@ -58,7 +58,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7"
-content-hash = "574ef3d5cda2257237516454e130489fa0bdddf7c45ea74fe5ec2d8d88c496f7"
+content-hash = "4359fda7155e293a217c733050dac21ddaa2eb6f87b162434cb56e56f042cc52"
 
 [metadata.files]
 falcon = [
