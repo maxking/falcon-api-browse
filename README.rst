@@ -38,7 +38,7 @@ instance during Falcon App creation.
 Examples
 --------
 
-There are some runnable examples in [examples/](examples/) directory.
+There are some runnable examples in `examples/ <examples/>`_ directory.
 
 LICENSE
 -------
