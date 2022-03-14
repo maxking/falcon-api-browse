@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h2>Request</h2>
+    {{ request }}
+
+    <pre>{{request.method}}: {{request.url}}</pre>
+
+    <h2>Resource</h2>
+
+    <pre>Resource: {{ resource.__class__.__module__ }}.{{ resource.__class__.__name__ }}
+
+Doc: {{ resource.__doc__ }}</pre>
+{% if resource.on_get %}
+    <pre>GET: {{ resource.on_get.__doc__|escape }}</pre>
+{% endif %}
+{% if resource.on_post %}
+    <pre>POST: {{ resource.on_post.__doc__ }}</pre>
+{% endif %}
+{% if resource.on_put %}
+    <pre>PUT: {{ resource.on_put.__doc__ }}</pre>
+{% endif %}
+{% if resource.on_patch %}
+    <pre>PATCH: {{ resource.on_patch.__doc__ }}</pre>
+{% endif %}
+{% if resource.on_delete %}
+    <pre>DELETE: {{ resource.on_delete.__doc__ }}</pre>
+{% endif %}
+
+    <h2>Response</h2>
+    <pre>Status: {{ response.status }}</pre>
+    <pre>Body:</pre>
+    <pre>{{ response.text|ppjson }}</pre>
+  </body>
+</html>
