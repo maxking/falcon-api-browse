@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "falcon-api-browse"
-version = "0.1.0"
+version = "0.1.1"
 description = "Middleware for Falcon web framework to browse JSON API in HTML"
 authors = ["Abhilash Raj <raj.abhilash1@gmail.com>"]
 license = "Apache-2.0"
+readme = "README.rst"
+homepage = "https://github.com/maxking/falcon-api-browse"
+repositor = "https://github.com/maxking/falcon-api-browse"
+keywords = ["falcon"]
 
 [tool.poetry.dependencies]
 python = ">=3.7"
