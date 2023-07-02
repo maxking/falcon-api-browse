@@ -19,7 +19,7 @@ enough to be used by other projects, it will be provided via PyPI.
 
 ::
 
-   pip install git+https://github.com/maxking/falcon-api-browse
+   pip install falcon-api-browse
 
 Using
 -----
@@ -38,7 +38,7 @@ instance during Falcon App creation.
 Examples
 --------
 
-There are some runnable examples in `examples/ <examples/>`_ directory.
+There are some runnable examples in `examples/ <https://github.com/maxking/falcon-api-browse/tree/main/examples/>`_ directory.
 
 LICENSE
 -------
