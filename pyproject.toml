@@ -6,7 +6,7 @@ authors = ["Abhilash Raj <raj.abhilash1@gmail.com>"]
 license = "Apache-2.0"
 readme = "README.rst"
 homepage = "https://github.com/maxking/falcon-api-browse"
-repositor = "https://github.com/maxking/falcon-api-browse"
+repository = "https://github.com/maxking/falcon-api-browse"
 keywords = ["falcon"]
 
 [tool.poetry.dependencies]
